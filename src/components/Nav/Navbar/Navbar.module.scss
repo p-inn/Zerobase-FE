@@ -1,0 +1,130 @@
+.userHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  box-shadow: $box-shadow;
+  position: relative;
+  z-index: 300;
+  .service {
+    width: $width-inner;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    height: 2.6rem;
+    font-size: 12px;
+    a,
+    p {
+      &:first-child {
+        color: $color-green;
+        &::after {
+          content: ' ';
+          display: inline-block;
+          width: 1px;
+          height: 11px;
+          margin-left: 12px;
+          background-color: rgb(217, 217, 217);
+        }
+      }
+      color: $color-black;
+      font-weight: 600;
+    }
+    button {
+      font-family: 'Noto Sans KR', dotum, sans-serif;
+      background-color: #fff;
+      cursor: pointer;
+      border-style: none;
+      color: $color-black;
+      font-weight: 600;
+      font-size: 12px;
+      padding: 0;
+    }
+  }
+  .search {
+    width: $width-inner;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .logo {
+        width: 44px;
+      }
+      .title {
+        font-size: 18px;
+        font-weight: 600;
+        color: $color-green;
+      }
+    }
+    .inputWrap {
+      position: relative;
+      .searchInput {
+        width: 24rem;
+        font-size: 16px;
+        outline: none;
+        border: 1px solid $color-green;
+        border-radius: 6px;
+        padding: 0.8rem;
+      }
+      .searchBtn {
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        outline: none;
+        top: 2px;
+        right: 0;
+        padding: 0.6rem;
+        cursor: pointer;
+      }
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      .cart {
+        position: relative;
+        .count {
+          position: absolute;
+          top: -3px;
+          right: -10px;
+          display: flex;
+          justify-content: center;
+          align-self: center;
+          width: 12px;
+          height: 12px;
+          border-radius: 50px;
+          padding: 3px;
+          font-size: 8px;
+          font-weight: 600;
+          color: $color-white;
+          background-color: $color-green;
+        }
+      }
+    }
+  }
+  nav {
+    width: $width-inner;
+    padding-top: 1rem;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      height: 4rem;
+      align-items: center;
+      font-weight: 600;
+      .hamberger {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
+
+.mypage {
+  background-color: red;
+}
